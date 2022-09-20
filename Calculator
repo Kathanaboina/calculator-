@@ -1,0 +1,79 @@
+<html>
+<head>
+<style type="text/css">
+body{
+ background-image:url("content://media/external/downloads/133895");
+ background-repeat:1-repeat;
+}
+td{
+background-color:aqua;
+}
+button{
+background-color:yellow;
+padding:15px;
+margin:5px;
+}
+r{
+background-image:url("content://media/external/downloads/133899");
+}
+th{
+background-color:green;
+color:red;
+}
+table{
+border:1px solid;
+}
+
+
+</style>
+<script type="text/javascript">
+function ac(){
+document.getElementById("res").value="";
+}
+function show(input)
+{
+document.getElementById("res").value+=input;
+}
+function cal()
+{
+var p=eval(document.getElementById("res").value)
+document.getElementById("res").value=p;
+}
+</script>
+</head>
+<body><center>
+<table border="4">
+<tr>
+<th colspan="4">SR CALUCulator</th>
+</tr>
+<tr>
+<td colspan="3" id="sr"><input type="text" id="res"></td>
+<td><button type="button" onclick="ac()">AC</button></td>
+</tr>
+<tr>
+<td><h1 align="center"><button onclick="show('0')">0</button></h1></td>
+<td><h1 align="center"><button onclick="show('1')">1</button></h1></td>
+<td><h1 align="center"><button onclick="show('2')">2</button></h1></td>
+<td><h1 align="center"><button onclick="show('+')">+</button></h1></td>
+</tr>
+<tr>
+<td><h1 align="center"><button onclick="show('3')">3</button></h1></td>
+<td><h1 align="center"><button onclick="show('4')">4</button></h1></td>
+<td><h1 align="center"><button onclick="show('5')">5</button></h1></td>
+<td><h1 align="center"><button onclick="show('-')">-</button></h1></td>
+</tr><tr>
+<td><h1 align="center"><button onclick="show('6')">6</button></h1></td>
+<td><h1 align="center"><button onclick="show('7')">7</button></h1></td>
+<td><h1 align="center"><button onclick="show('8')">8</button></h1></td>
+<td><h1 align="center"><button onclick="show('*')">*</button></h1></td>
+</tr><tr>
+<td><h1 align="center"><button onclick="show('9')">9</button></h1></td>
+<td><h1 align="center"><button onclick="show('/')">/</button></h1></td>
+<td><h1 align="center"><button onclick="show('%')">%</button></h1></td>
+<td><h1 align="center"><button onclick="cal()">=</button></h1></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>
